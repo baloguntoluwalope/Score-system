@@ -1,0 +1,46 @@
+.medal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.medal-badge--gold {
+  background: var(--gold-bg);
+  color: #795500;
+}
+
+.medal-badge--silver {
+  background: var(--silver-bg);
+  color: #555;
+}
+
+.medal-badge--bronze {
+  background: var(--bronze-bg);
+  color: #7B3A00;
+}
+
+.medal-badge__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.medal-badge--gold   .medal-badge__dot { background: var(--gold); }
+.medal-badge--silver .medal-badge__dot { background: var(--silver); }
+.medal-badge--bronze .medal-badge__dot { background: var(--bronze); }
+
+.house-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.house-dot.Blue   { background: var(--house-blue); }
+.house-dot.Yellow { background: var(--house-yellow); }
+.house-dot.Green  { background: var(--house-green); }
+.house-dot.Red    { background: var(--house-red); }

@@ -1,0 +1,40 @@
+:root {
+  --house-blue:    #1565C0;
+  --house-yellow:  #F9A825;
+  --house-green:   #2E7D32;
+  /* --house-red:     #C62828; */
+
+  --gold:          #FFD700;
+  --gold-bg:       #FFF8E1;
+  --silver:        #9E9E9E;
+  --silver-bg:     #F5F5F5;
+  --bronze:        #CD7F32;
+  --bronze-bg:     #FBE9E7;
+
+  --primary:       #1A237E;
+  --primary-light: #3949AB;
+  --accent:        #FF6F00;
+  --accent-light:  #FFA000;
+
+  --success:       #2E7D32;
+  --error:         #C62828;
+  --warning:       #F9A825;
+
+  --bg:            #F0F2F5;
+  --card:          #FFFFFF;
+  --border:        #E0E0E0;
+  --text:          #212121;
+  --text-muted:    #757575;
+  --text-light:    #BDBDBD;
+
+  --radius-sm:     6px;
+  --radius:        10px;
+  --radius-lg:     16px;
+
+  --shadow-sm:     0 1px 4px rgba(0,0,0,0.06);
+  --shadow:        0 2px 12px rgba(0,0,0,0.08);
+  --shadow-lg:     0 8px 32px rgba(0,0,0,0.12);
+
+  --sidebar-width: 240px;
+  --navbar-height: 64px;
+}

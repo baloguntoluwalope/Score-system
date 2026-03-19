@@ -1,0 +1,177 @@
+/* ── Game Card ───────────────────────────────────────────────────── */
+.game-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.game-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.game-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.game-card__meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.game-card__tag {
+  background: #E8EAF6;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.game-card__scores {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.game-card__house-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.game-card__house-name {
+  font-weight: 600;
+  width: 80px;
+}
+
+.game-card__bar-wrap {
+  flex: 1;
+  height: 8px;
+  background: var(--bg);
+  border-radius: 4px;
+  margin: 0 12px;
+  overflow: hidden;
+}
+
+.game-card__bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.game-card__points {
+  font-weight: 700;
+  color: var(--primary);
+  width: 30px;
+  text-align: right;
+}
+
+/* ── House Score Card ────────────────────────────────────────────── */
+.house-score-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  border: 2px solid transparent;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.house-score-card:hover {
+  transform: translateY(-2px);
+}
+
+.house-score-card.blue   { border-color: var(--house-blue); }
+.house-score-card.yellow { border-color: var(--house-yellow); }
+.house-score-card.green  { border-color: var(--house-green); }
+.house-score-card.red    { border-color: var(--house-red); }
+
+.house-score-card__name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.house-score-card.blue   .house-score-card__name { color: var(--house-blue); }
+.house-score-card.yellow .house-score-card__name { color: var(--house-yellow); }
+.house-score-card.green  .house-score-card__name { color: var(--house-green); }
+.house-score-card.red    .house-score-card__name { color: var(--house-red); }
+
+.house-score-card__points {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.house-score-card__medals {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ── Stat Card ───────────────────────────────────────────────────── */
+.stat-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-card__icon {
+  font-size: 2rem;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card__label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.stat-card__value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.house-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
