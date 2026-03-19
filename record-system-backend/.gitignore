@@ -1,0 +1,21 @@
+# env files
+.env
+.env.*
+record-system-backend/.env
+# dependencies
+node_modules/
+
+# logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# build
+dist/
+build/
+
+seed.js
+cleanRed.js
