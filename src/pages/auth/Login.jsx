@@ -196,10 +196,10 @@ const Login = () => {
 
           {/* ── Public links ───────────────────────────────────────────── */}
           <div className="login-public">
-            <a href="api/leaderboard" className="login-public__btn">
+            <a href="/leaderboard" className="login-public__btn">
               🏆 View Live Leaderboard
             </a>
-            <a href="api/" className="login-public__btn">
+            <a href="/" className="login-public__btn">
               🎮 Browse All Events
             </a>
           </div>
