@@ -1,0 +1,95 @@
+.leaderboard {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.leaderboard__title {
+  padding: 16px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  border-bottom: 1px solid var(--border);
+  background: #F8F9FF;
+}
+
+.leaderboard__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard__table th,
+.leaderboard__table td {
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.leaderboard__table th {
+  background: var(--bg);
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.leaderboard__table tr:last-child td {
+  border-bottom: none;
+}
+
+.leaderboard__table tbody tr:hover {
+  background: #F8F9FF;
+}
+
+.leaderboard__rank {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.leaderboard__rank--1 { color: var(--gold); }
+.leaderboard__rank--2 { color: var(--silver); }
+.leaderboard__rank--3 { color: var(--bronze); }
+
+.leaderboard__house {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.leaderboard__points {
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.leaderboard-tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--bg);
+  padding: 4px;
+  border-radius: var(--radius);
+  margin-bottom: 24px;
+  width: fit-content;
+}
+
+.leaderboard-tab {
+  padding: 8px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.leaderboard-tab.active {
+  background: var(--card);
+  color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
